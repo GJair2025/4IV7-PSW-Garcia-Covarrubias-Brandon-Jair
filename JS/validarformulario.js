@@ -3,7 +3,7 @@ Crear una función que se encargue de validar
 que el usuario debe escribir 5
 */
 
-function validar(forulario){
+function validar(formulario){
 
     if(formulario.nombre.value.length < 5){
         alert("Escribe más de 5 caracteres en el campo nombre");
@@ -19,9 +19,9 @@ function validar(forulario){
 
     var chekStr = formulario.nombre.value;
 
-    var alivalid = true;
+    var allvalid = true;
 
-    for(var i = 0 < checkStr.length; i++){
+    for(var i = 0; i < checkStr.length; i++){
         var ch = chekStr.charAt(i);
         for(var j = 0; j < checkOK.length; j++)
         if(ch == checkOK.charAt(j))
@@ -30,6 +30,12 @@ function validar(forulario){
             allvalid = false;
             break;
         }
+    }
+
+    if(!allvalid){
+        alert("Escribe solo letras en el campo nombre");
+        formulario.nombre.focus();
+        return false;
     }
 
     /*
@@ -45,4 +51,3 @@ function validar(forulario){
 
     return b.test(txt);
 }
-

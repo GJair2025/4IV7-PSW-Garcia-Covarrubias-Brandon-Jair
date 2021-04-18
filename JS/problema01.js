@@ -21,4 +21,6 @@ function interes(){
     var resultado = parseInt(valor);
     var interes = resultado*0.02;
     var total = resultado + interes;
+
+    document.formulario.sueldoti.value="$"+total;
 }

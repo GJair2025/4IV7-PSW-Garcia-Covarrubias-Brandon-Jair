@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <script Language="JavaScript" type="text/JavaScript"></script>
+    <script Language="JavaScript" type="text/JavaScript"
+    src="./JS/validarformulario.js"></script>
 </head>
 <body>
     
 <form method="GET" name="formulario" 
-    action="formulario.html" onsubmit="return" validar(this">
+    onsubmit="return validar(this)" action="formulario.html">
 
     Nombre:
     <br>
@@ -26,6 +27,7 @@
     <br>
     <input type="submit" value="Enviar datos" name="enviar">
     <input type="reset" value="Borrar Formulario" name="borrar">
+
 </form>
 </body>
 </html>
